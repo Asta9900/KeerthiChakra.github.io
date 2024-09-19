@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthi Chakra Battula - AI Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    
+    <header class="fade-in">
+        <h1>Keerthi Chakra Battula</h1>
+        <p>AI Engineer</p>
+        <p>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a> |
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a> |
+            <i class="fas fa-phone"></i> 9000999 |
+            <a href="mailto:chakrabattula21@example.com"><i class="fas fa-envelope"></i></a>
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="summary" class="section fade-in">
+        <h2>Summary</h2>
+        <p id="typed-summary"></p>
+    </div>
+
+    <div id="experience" class="section fade-in">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Team Lead - Generative AI Division</h3>
+                    <p>Promptora AI — September 2024 to Present</p>
+                    <ul>
+                        <li>Led the GenAI team, working on high-impact projects focused on AI-driven automation and database management.</li>
+                        <li>Improved Oracle to PostgreSQL conversion using Generative AI, reducing computational time and errors.</li>
+                        <li>Leveraged Knowledge Graphs and Language Models to query large datasets efficiently.</li>
+                        <li>Built strong relationships with clients, ensuring project success and continuous improvement.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more timeline items for previous experiences -->
+        </div>
+    </div>
+
+    <div id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project-card" onclick="openModal('project1')">
+                <h3>Legacy Code Conversion</h3>
+                <p>COBOL to JAVA</p>
+            </div>
+            <div class="project-card" onclick="openModal('project2')">
+                <h3>Legal Draft Bot</h3>
+                <p>AI-powered legal assistant</p>
+            </div>
+            <div class="project-card" onclick="openModal('project3')">
+                <h3>Fraud Detection</h3>
+                <p>Using Generative AI</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </div>
+
+    <div id="education" class="section fade-in">
+        <h2>Education</h2>
+        <h3>Bachelor of Technology in Computer Science and Engineering (CSE)</h3>
+        <p>Vellore Institute of Technology — Graduated 2023</p>
+        <ul>
+            <li>Specialization in Data Analytics, CGPA 8.4.</li>
+            <li>Gold medalist in a regional university Volleyball championship.</li>
+            <li>Participated in several hackathons, gaining hands-on experience in AI and data analytics.</li>
+        </ul>
+    </div>
+
+    <div id="skills" class="section fade-in">
+        <h2>Technical Skills</h2>
+        <div class="skill-bars">
+            <div class="skill-bar">
+                <span class="skill-name">Python</span>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-name">JavaScript</span>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-name">Java</span>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-name">TensorFlow</span>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-name">PyTorch</span>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section fade-in">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
